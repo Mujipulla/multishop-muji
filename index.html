@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Multishops</title>
+</head>
+
+
+<body>
+    <header>         
+        <!-- Première Navbar -->
+        <nav class="navigation">
+            <div class="container pr-5 pl-5">
+                <div class="row">
+                    <div class="col-md-6 menu">
+                        <ul class="menu-list p-0" style="margin-bottom: 0px;">
+                            <li class="menu-list-item"><a href="#">About</a></li>
+                            <li class="menu-list-item"><a href="#">Contact</a></li>
+                            <li class="menu-list-item"><a href="#">Help</a></li>
+                            <li class="menu-list-item"><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 right">
+                        <form action="">
+                            <select title="account-settings" name="compte" class="border-0">
+                                <option>My account</option>
+                                <option value="login">Connection</option>
+                                <option value="register">Register</option>
+                            </select>
+
+                            <select title="currency" name="devise" class="border-0">
+                                <option value="usd">USD</option>
+                                <option value="euro">EURO</option>
+                                <option value="bbp">BBP</option>
+                            </select>
+
+                            <select title="language" name="lang" class="border-0">
+                                <option value="en">EN</option>
+                                <option value="fr">FR</option>
+                                <option value="it">IT</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <nav class="navbar my-container navbar-expand-md navbar-1 navigation">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about"><b>About</b> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="color: #3d464d ;">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#help" style="color: #3d464d ;">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faqs" style="color: #3d464d ;">FAQs</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <select  style="border:none;">
+                        <option value="">My account</option>
+                        <option value="">My account</option>
+                        <option value="">My account</option>
+                        <option value="">My account</option>
+                        <option value="">My account</option>
+                    </select>
+                    <select  style="border:none;">
+                        <option value="">USD</option>
+                        <option value="">EUR</option>
+                        <option value="">BTC</option>
+                        <option value="">PESOS</option>
+                        <option value="">ETH</option>
+                    </select>
+                    <select  style="border:none;">
+                        <option value="">EN</option>
+                        <option value="">FR</option>
+                        <option value="">ESP</option>
+                        <option value="">US</option>
+                        <option value="">IT</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </nav> -->
+
+        <!-- deuxième Navbar -->
+        <div class="fluid mt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col-md-6 multi"><span>Multi</span></div>
+                            <div class="col-md-6 shop"><span>Shop</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <form class="search-form" action="">
+                            <div class="container flex-wrap border d-flex justify-content-between align-items-center p-0">
+                                <input type="text" class="border-0 p-0" placeholder="Search for the product"
+                                    style="width:80%">
+                                <button id="fa-magnifying-glass" type="submit" class="border" style="height: 100%;">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-3 align-items-center flex-column justify-content-center">
+                        <h6 class="left-flex mb-0">Customer Service</h6>
+                        <p class="mb-0">+01 23 45 67 89</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troisème Navbar -->
+        <nav class="navbar d-flex space-between p-0">
+            <div class="container pr-1 pl-1 ">
+                <div class="group-catnav d-flex" style="width: 80%;">
+
+                    <div class="categories d-flex align-items-center" style="font-size: 1rem; padding: 0rem 2rem;">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <select name="compte"
+                            style="width: 18rem; background-color: #ffd334; color: #3d464d; border: none;">
+                            <option value=""><a href="#">Categories</a></option>
+                        </select>
+                    </div>
+
+                    <div class="mb-0 my-home" style="font-size: 0.9rem;">
+                        <ul class="mb-0  align-items-center">
+                            <li class=""><a href="#">Home</a></li>
+                            <li class=""><a href="#">Shop</a></li>
+                            <li class=""><a href="#">Shop Detail</a></li>
+                            <li>
+                                <select name="compte"
+                                    style="background-color: #3d464d; color: white; border: none; padding: 0 5px 5px 0px;">
+                                    <option value=""><a href="#">Pages</a></option>
+                                </select>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cart-container d-flex space-between">
+                    <div class="liked d-flex align-items-center justify-content-center" style="flex-grow: 1;">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <div class="rounded-count border d-flex align-items-center justify-content-center">0</div>
+                    </div>
+                    <div class="cart d-flex align-items-center justify-content-center" style="flex-grow: 1;">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div class="rounded-count border d-flex align-items-center justify-content-center">0</div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">     
+        <div class="container my-container">
+            <!-- Carousel -->
+            <div class="row pb-5">
+                <div class="col-md-8 carousel slide pt-3"  id="myCarousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img class="carousel" src="img/carousels/carousel-3.jpg" alt="">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Kids Fashion</h1>
+                                    <p>There are severl type of feshion item available it this section!</p>
+                                    <a class="shop-white text-white" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item active">
+                            <img class="carousel" src="img/carousels/carousel-2.jpg" alt="">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Kids Fashion</h1>
+                                    <p>There are severl type of feshion item available it this section!</p>
+                                    <a class="shop-white text-white" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="carousel" src="img/carousels/carousel-1.jpg" alt="">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Kids Fashion</h1>
+                                    <p>There are severl type of feshion item available it this section!</p>
+                                    <a class="shop-white text-white" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- <div class="col-md-8 left pt-3">
+                    <img class="image-fluid slide-1" src="img/carousels/carousel-1.jpg" alt="First slide">
+                    <div class="image-text">
+                        <p>Kids Feshion</p>
+                        <p class="phara">There are severl type of feshion item available it this section</p>
+                        <button class="carousel-button">Shop Now</button>
+                    </div>
+                </div> -->
+
+                <div class="col-md-4 right pt-3">
+                    <div class="row">
+                        <div class="col-md-12 right-1">
+                            <img class="image-fluid" src="img/offer-1.jpg" alt="First slide">
+                            <div class="image-text-2 d-flex" id="image-text-2">
+                                <p class="save">SAVE 20%</p> 
+                                <p class="special-offer">Special Offer</p>
+                                <button>Shop Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 right-2">
+                            <img class="image-fluid" src="img/offer-2.jpg" alt="First slide">
+                            <div class="image-text-3 d-flex" id="image-text-2">
+                                <p class="save-2">SAVE 20%</p> 
+                                <p class="special-offer-2">Special Offer</p>
+                                <button>Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quality Product -->
+            <div class="d-flex align-items-stretch justify-content-center space-between flex-wrap mt-3 pb-5"  style="column-gap: 20px;">
+                <div class="services">
+                    <p><i class="fa fa-check icon" aria-hidden="true"></i>
+                        &nbsp;&nbsp;Quality Ptoduct
+                    </p>
+                </div>
+                <div class="services">
+                    <p><i class="fa fa-truck icon" aria-hidden="true"></i>
+                        &nbsp;&nbsp;Free Shipping
+                    </p>
+                </div>
+                <div class="services">
+                    <p><i class="fa fa-exchange icon" aria-hidden="true"></i>
+                        &nbsp;&nbsp;14-Day Return
+                    </p>
+                </div>
+                <div class="services">
+                    <p><i class="fa fa-volume-control-phone icon" aria-hidden="true"></i>
+                        &nbsp;&nbsp;24/7Support
+                    </p>
+                </div>
+            </div>
+
+            <!-- CATEGORIES -->
+            <hr>
+            <h3 class="title" style="background-color: blue;">CATERGORIES</h3>
+            
+            <div class="d-flex align-items-center justify-content-between flex-wrap pb-5">
+                <div class="c-properties">
+                    <img src="img\catogories\cat-1.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-2.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-3.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-4.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-4.jpg" alt="" style="height: 100px;">
+                    <div  class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-3.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-2.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-1.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-2.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-1.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-4.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div class="c-properties">
+                </div>
+
+                <div class="c-properties">
+                    <img src="img\catogories\cat-3.jpg" alt="" style="height: 100px;">
+                    <div class="c-properties">
+                        <p class="letter">Catogory Name<br><span style="font-size: smaller; font-weight: lighter;">100
+                                products</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEATURED PRODUCTS  -->
+            <hr>
+            <h3 class="title">FEATURED PRODUCTS</h3>
+
+            <div class="products-display pb-5">
+                <div class="product">
+                    <img class="product-img" src="img/products/product-1.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-2.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-3.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-4.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-5.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-6.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-7.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-8.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OFFERS -->
+            <div class="offers d-flex pb-5">
+                <div class="offer" id="offer-1">
+                    <p>SAVE 20%</p>
+                    <p class="special-offer-text">Special Offer</p>
+                    <button>Shop Now</button>
+                </div>
+
+                <div class="offer" id="offer-2">
+                    <p>SAVE 20%</p>
+                    <p class="special-offer-text">Special Offer</p>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+
+            <!-- RECENT PRODUCTS -->
+            <hr>
+            <h3 class="title">RECENT PRODUCTS</h3>
+            <div class="products-display pb-5">
+                <div class="product">
+                    <img class="product-img" src="img/products/product-1.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-2.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-3.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-4.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-5.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-6.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-7.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img class="product-img" src="img/products/product-8.jpg" alt="">
+                    <div class="product-info">
+                        <p class="product-name">Product Name Goes Here</p>
+                        <p class="product-price">$123.00
+                            <span class="old-price">$123.00</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <small>(99)</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vendors -->
+            <div class="vendors d-flex align-items-center justify-content-between flex-wrap  pb-5 ">
+                <div class="vendor">
+                    <img src="img/vendors/vendor-1.jpg" alt="">
+                </div>
+                <div class="vendor">
+                    <img src="img/vendors/vendor-2.jpg" alt="">
+                </div>
+                <div class="vendor">
+                    <img src="img/vendors/vendor-3.jpg" alt="">
+                </div>
+                <div class="vendor">
+                    <img src="img/vendors/vendor-4.jpg" alt="">
+                </div>
+                <div class="vendor">
+                    <img src="img/vendors/vendor-5.jpg" alt="">
+                </div>
+                <div class="vendor">
+                    <img src="img/vendors/vendor-6.jpg" alt="">
+                </div>
+                <div class="vendor">
+                    <img src="img/vendors/vendor-7.jpg" alt="">
+                </div>
+                <div class="vendor">
+                    <img src="img/vendors/vendor-8.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+
+            </div>    
+        </div>
+
+        <!-- Début Footer-->
+        <footer class="container">
+            <div class="row">
+                <div class="col-md-3 get-in-touch">
+                    <h3>Get In Touch</h3>
+                    <p>Wherever you go; wherever you are, keep in touch.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 123 av. Jules, 75000 - Paris</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@exemple.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +33 17 45 42 45 24</li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3 shop-links">
+                    <h3>Quick Shop</h3>
+                    <ul>
+                        <li><a href="#" class="links">Home</a></li>
+                        <li><a href="#" class="links">Our Shop</a></li>
+                        <li><a href="#" class="links">Shop Detail</a></li>
+                        <li><a href="#" class="links">Shopping Cart</a></li>
+                        <li><a href="#" class="links">Checkout</a></li>
+                        <li><a href="#" class="links">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3 shop-links">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="#" class="links">Home</a></li>
+                        <li><a href="#" class="links">Our Shop</a></li>
+                        <li><a href="#" class="links">Shop Detail</a></li>
+                        <li><a href="#" class="links">Shopping Cart</a></li>
+                        <li><a href="#" class="links">Checkout</a></li>
+                        <li><a href="#" class="links">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3 newsletter">
+                    <h3>Newsletter</h3>
+                    <p>We welcome always our customers to keep in touch.</p>
+                    <form action="">
+                        <input type="text" id="search-bar" placeholder="Your Email Address"> 
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    
+                    <p>FOLLOW US</p>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <div class="col-12 credit">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>&copy;<span>  mujipulla.com </span>All rights reserved. Designed by<span> Mujipulla</span></p>
+                        </div>
+                        <div class="col-md-3 card-payment">
+                            <img src="img/carousels/payments.png" class="payment image-fluid" alt="Payment">
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+                               <i class="fas fa-arrow-up"></i>
+                            </button>     
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </footer>
+        <!-- Fin Footer-->
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="https://kit.fontawesome.com/a9b8a8cd22.js" crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</htmld
